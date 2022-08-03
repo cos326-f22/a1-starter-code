@@ -74,9 +74,9 @@ ocamlbuild -clean
     instructions in the file and write some tests where we ask). Follow the good
     practices you have learned in earlier COS courses.
 3. **Auxiliary functions:** Feel free to use them when they make your code
-    cleaner, more modular, and/or easier to test &mdash; that's what functions
-    are for! Just make sure that if we name a particular function that you have
-    to write (either in the assignment text, or in a template file), that you
+    cleaner, more modular, and/or easier to test&mdash;that's what functions are
+    for! Just make sure that if we name a particular function that you have to
+    write (either in the assignment text, or in a template file), that you
     preserve its name so that our automated grader can find it.
 4. **Style:** Finally, please pay attention to style. Take the extra time to
     think about the problems and find the most elegant solutions before coding
