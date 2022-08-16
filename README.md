@@ -7,7 +7,7 @@ programming and apply them to some simple problems.
 
 ## Part 1: Online Tasks
 
-- Register for our [Ed discussion board](https://us.edstem.org/join/WKvVTz).
+- You should be already automatically registered for our [Ed discussion board](https://edstem.org/us/courses/25177).
     When you have a question about a problem set, Ed will be your go-to source.
 - Read the introductory notes on
     [Functional Basics](https://www.cs.princeton.edu/courses/archive/fall22/cos326/notes/basics.php)
