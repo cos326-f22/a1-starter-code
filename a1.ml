@@ -29,9 +29,9 @@ let class_year : year = Other "I haven't filled it in yet"
 (* 1.e. Replace the .... with what you're excited about in this course *)
 let exciting : string = "I'm excited about ....!"
 
-let print = Printf.printf
+let sprint = Printf.sprintf
 
-let print_survey () =
+let return_survey () : string =
   let string_year =
     (match class_year with
        | Freshman -> "Freshman"
@@ -40,12 +40,10 @@ let print_survey () =
        | Senior -> "Senior"
        | Other s -> "Other: " ^ s
     ) in
-    (print "----------------------------------------\n";
-     print "Name: %s\n" name;
-     print "Email: %s\n" email;
-     print "Year: %s\n" string_year;
-     print "%s\n" exciting;
-     print "----------------------------------------\n\n")
+    ((sprint "Name: %s\n" name) ^
+     (sprint "Email: %s\n" email) ^
+     (sprint "Year: %s\n" string_year) ^
+     (sprint "%s\n\n" exciting))
 
 (* Problem 2 - Fill in types:
  * Replace each ??? with the appropriate type of the corresponding expression.
@@ -154,7 +152,7 @@ let rec prob4b (x:??) (y:??) : ?? =
 
 let exp4b : string = ""
 
-(* 4c: 
+(* 4c:
  * Given the types that you have been introduced to so far in this
  * class, is it possible to find types for the argument and result that
  * make the function forever type check?
