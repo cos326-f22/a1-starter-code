@@ -16,12 +16,11 @@ programming and apply them to some simple problems.
 
 ## Part 2: Setting up your Development Environment
 
-Check out the course resources web site for help
-[getting starting with OCaml](https://www.cs.princeton.edu/courses/archive/fall22/cos326/resources.php)
-and installing or configuring a development environment for your chosen editor,
-such as emacs, vim, VS Code, or atom. Once you have OCaml installed and your
-development tools set up, now you just have to learn how to write useful
-programs!
+Check out the course 
+[Resources page](https://www.cs.princeton.edu/courses/archive/fall22/cos326/resources.php) and 
+install opam, ocaml, and VS Code (or some other editor of your
+choice).  Once your development tools are set up, now you just have to
+learn how to write useful programs!
 
 ## Part 3: Assignment Basics
 
@@ -30,36 +29,22 @@ You should see the following files in this repository:
     series of short problems you should solve.
 - `signature.txt`: You will record your sources here.
 
-You can compile `a1.ml` by typing:
+After you clone the repo, create a Unix terminal window (inside VS Code, or outside VS Code if you like), make sure it's in the right directory.
 
-```
-ocamlbuild a1.byte
-```
+You can run `a1.ml` by typing:  `ocaml a1.ml`.
 
-This will do two things. First, it creates the executable file `a1.byte`.
-Second, it creates a directory called `_build` full of auxiliary files used by
-the OCaml compiler system. To run the executable we have created, type:
-
-```
-./a1.byte
-```
-
-If you haven't touched any of the code inside `a1.ml` yet, you should see the
+Either way, if you haven't touched any of the code inside `a1.ml` yet, you should see the
 following message printed out:
-
 ```
-Fatal error: exception Failure("undefined")
+Exception: Failure("undefined")
 ```
 
 That indicates the `Failure` exception has been raised. Follow the instructions
-in `a1.ml` to eliminate the error and complete the assignment.
+in `a1.ml` to eliminate the error and complete the assignment.  That is, edit in VS code, save your file, then `ocaml a1.ml` until everything works.  In the process, you may find it helpful to use the read-eval-print-loop (REPL)
 
-To delete the `_build` directory and remove the executable files you have
-created, type
+## Running inside the ocaml read-eval-print-loop
 
-```
-ocamlbuild -clean
-```
+Save your file; from your terminal shell prompt, type `ocaml` or `utop` and at the `#` prompt, type `#use "a1.ml";;`  This will let you interact with your program, as demonstrated in lecture or precept.
 
 ## Important notes
 
@@ -89,16 +74,27 @@ ocamlbuild -clean
     [lecture notes](https://www.cs.princeton.edu/courses/archive/fall22/cos326/schedule.php).
     In addition, you are also encouraged to bring style questions to the course
     staff at office hours.
-5. **Line limit:** One important element of style is having at most 80
-    characters per line. This is important for our ability to read your code.
+5. **Line limit:** Please use no more than 80 characters per line, so
+    we can read your code and we're in a better mood when we grade it.
 
 ## Hand In
 
 Your assignment will be automatically submitted every time you push your changes
-to your GitHub repository. Within a couple minutes of your submission, the
-autograder will make a comment on your commit listing the output of our testing
-suite when run against your code. **Note that you will be graded only on your
-changes to `a1.ml`**, and not on your changes to any other files.
+to your GitHub repository. That is,
+
+```
+$ git commit -a -m "Message identifying your commit, for your own convenience"
+$ git push
+```
+
+Within a couple minutes of your submission, the autograder will make a
+comment on your commit listing the output of our testing suite when
+run against your code. You can read this comment in github, and you'll
+also get it in e-mail.
+
+**You will be graded only on your
+changes to `a1.ml` and `signature.txt`**, 
+and not on your changes to any other files.
 
 You may submit and receive feedback in this way as many times as you like,
 whenever you like.
